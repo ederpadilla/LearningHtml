@@ -5,7 +5,7 @@
 	<title>First Fucking heall yeah samples of html</title>
   <meta charset="UTF-8">
 </head>
-<body style="background-color:powderblue;">
+<body style="background-image:url('src/images/ironman.jpg')">
 	<h1>This is añññññññññ Headíng</h1>
 	<p>This is a paragraph.</p>
 	<h1>This is a Heading 2</h1>
@@ -167,5 +167,58 @@
 
 		<p style="font-size: 100px;">Lets start with basic css</p>
 	<h1 style="color:blue;">This is simple a Blue Heading bro its really simple can you see it</h1>
+	<h1 align="center">This is image Part 🍺</h1><br>
+	<img src="src/images/dbz1.jpg" alt="First dragon ball image" style="width:700px;height:500px;"><br>
+	<img src="src/images/dbz2.jpg" alt="Second dragon ball image" style="width:700px;height:500px;"><br>
+	<img src="src/images/dbz3.jpg" alt="Third dragon ball image"style="width:700px;height:500px;"><br>
+	<img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg"style="width:700px;height:500px;">
+	<br>
+	<a href="https://www.realmadrid.com">
+  	<img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg" alt="Isco home" style="width:620px;height:420px;border:0;">
+	</a>
+	<br>
+	<p><img src="/Users/ederpadilla/Downloads/android_apple.gif" alt="Android yeah" style="float:right;width:82px;height:82px;">
+	The Android will float to the right of the text.</p>
+
+	<p><img src="/Users/ederpadilla/Downloads/android_apple.gif" alt="Android yeah" style="float:left;width:82px;height:82px;">
+	The Android will float to the left of the text.</p>
+	<h2>Image Maps</h2>
+	<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+	
+	<img src="https://www.w3schools.com/html/workplace.jpg" aalt="Workplace" usemap="#workmap" width="400" height="379">
+
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+	</map>
+	<h2>Background Image</h2>
+
+	<p style="background-image:url('src/images/dbz1.jpg');color: green">
+	this is  text with a <br>
+	background jojojojoj <br>
+	jojojojojojojojojojoj<br>
+	jojojojojojojojojojoj<br>
+	jojojojojojojojojojoj<br>
+	jojojojojojojojojojoj<br>
+	jojojojojojojojojojoj<br>
+	</p>
+	<h2>The picture Element</h2>
+
+	<picture>
+	  <source media="(min-width: 650px)" srcset="src/images/biggoku.png">
+	  <source media="(min-width: 465px)" srcset="src/images/smallgoku.jpg">
+	  <img src="src/images/biggoku.png" alt="Goku" style="width:auto;">
+	</picture>
+	
+	<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+	The browser looks for the first source element where the media query matches the user's current viewport width,
+	and fetches the image specified in the srcset attribute.</p>
+	
+	<p>The img element is required as the last child tag of the picture declaration block.
+	The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+	</p>
+	
+	<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
 </body>
 </html>
