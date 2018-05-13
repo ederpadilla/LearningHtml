@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="3">
+	<meta name="description" content="Samples">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Eder Padilla github : ederpadilla">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="../src/images/" target="_blank">
+	<title></title>
+</head>
+<body>
+	<h1>My First JavaScript</h1>
+
+	<button type="button"
+	onclick="document.getElementById('demo').innerHTML = Date()">
+	Click me to display Date and Time.</button>
+	
+	<p id="demo"></p>
+	<p id="second_demo"> Esto es otro demo</p>
+	<br>
+	<button type="button" onclick="myHelloWorld();changeFontSize();changeColor();changeBgColor();changeImage()"> Second demo</button> <br>
+
+
+	<img id="img_one" src="https://instagram.fmex7-2.fna.fbcdn.net/vp/5a42be1e416eefe3f8803ec36f0898f7/5B8192DE/t51.2885-15/s640x640/sh0.08/e35/30077968_1986901404960696_368359004012806144_n.jpg" style="width: 300px;height: 400px;">
+	<br>
+	<img src="../eder_padilla.jpeg"> <br>
+	<img src="dbz1.jpg">
+
+
+	<script>
+		function myHelloWorld() { 
+    		document.getElementById("second_demo").innerHTML = "Hello JavaScript!";
+		}
+	</script>
+	<script>
+		function changeFontSize() { 
+    		document.getElementById("second_demo").style.fontSize = "25px";
+		}
+	</script>
+	<script>
+		function changeColor() { 
+    		document.getElementById("second_demo").style.color = "red";
+		}
+	</script>
+	<script>
+		function changeBgColor() { 
+    		document.getElementById("second_demo").style.backgroundColor = "yellow";
+		}
+	</script>
+	<script>
+		function changeImage() { 
+    		document.getElementById("img_one").src = "https://instagram.fmex7-2.fna.fbcdn.net/vp/e6c7f3b4602a16a4867a2b05d98901e0/5B811B53/t51.2885-15/s640x640/sh0.08/e35/30076501_1891307787586245_2239555493284544512_n.jpg";
+    		document.getElementById("img_one").style.width = "500px";
+    		document.getElementById("img_one").style.height = "600px";
+		}
+	</script>
+
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>
