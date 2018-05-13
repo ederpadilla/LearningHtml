@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<base href="../src/images/" target="_blank">
+	<title>
+		Responsive Image 🌮🌮🌮🌮🌮🌮🌮
+	</title>
+</head>
+<style>
+		* {
+	  		box-sizing:border-box;
+		}
+	
+		.left {
+		  background-color:#2196F3;
+		  padding:20px;
+		  float:left;
+		  width:20%; /* The width is 20%, by default */
+		}
+	
+		.main {
+		  background-color:#f1f1f1;
+		  padding:20px;
+		  float:left;
+		  width:60%; /* The width is 60%, by default */
+		}
+		
+		.right {
+		  background-color:#4CAF50;
+		  padding:20px;
+		  float:left;
+		  width:20%; /* The width is 20%, by default */
+		}
+		
+		/* Use a media query to add a break point at 800px: */
+		@media screen and (max-width:800px) {
+		  .left, .main, .right {
+		    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+	  	}
+	}
+</style>
+<body>
+	
+	<h2>Responsive Image</h2>
+	<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window 	to see the effect.</p>
+	
+	<img src="img_girl.jpg" style="width:100%;">
+	<br>
+	<br>
+	<br>
+	<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+	<br>
+	<br>
+	<picture>
+  	  <source srcset="smallflower.jpg" media="(max-width: 600px)">
+	  <source srcset="flowers.jpg" media="(max-width: 1500px)">
+	  <source srcset="flowers.jpg">
+	  <img src="img_smallflower.jpg" alt="Flowers">
+	</picture>
+	<h1 style="font-size:10vw">Hello Responsive</h1>
+	<h2>Media Queries</h2>
+	<p>Resize the browser window.</p>
+	
+	<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+	
+	<div class="left">
+	  <p>Left Menu</p>
+	</div>
+	
+	<div class="main">
+	  <p>Main Content</p>
+	</div>
+	
+	<div class="right">
+	  <p>Right Content</p>
+	</div>
+</body>
+</html>
