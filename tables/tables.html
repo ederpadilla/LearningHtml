@@ -3,8 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<style>
-		table, th, td {
+	/*	table, th, td {
     		border: 5px solid green;
+		}*/
+		table, th, td {
+		    border: 1px solid black;
+		    /*border-collapse: collapse;*/
+		    /*padding: 5px;*/
+		}
+		th{
+		    text-align: center;
+		}
+		table {
+    		border-spacing: 15px;
 		}
 	</style>
 	<title>
@@ -12,6 +23,8 @@
 	</title>
 </head>
 <body>
+	<h2>Border Spacing</h2>
+	<p>Border spacing specifies the space between the cells.</p>
 		<table style="width:100%">
 		  <tr>
 		    <th>The firs name</th>
@@ -29,6 +42,7 @@
 		    <td>El eder 2</td>
 		    <td>Padilla 2</td> 
 		    <td>100 el best</td>
+		    <td>I know what is a th</td>
 		  </tr>
 		</table>
 </body>

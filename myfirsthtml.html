@@ -5,7 +5,7 @@
 	<title>First Fucking heall yeah samples of html</title>
   <meta charset="UTF-8">
 </head>
-<body style="background-image:url('src/images/ironman.jpg')">
+<body style="background-image:url('src/images/ironman.jpg'); background-repeat: no-repeat; background-attachment: fixed">
 	<h1>This is añññññññññ Headíng</h1>
 	<p>This is a paragraph.</p>
 	<h1>This is a Heading 2</h1>
@@ -171,11 +171,18 @@
 	<img src="src/images/dbz1.jpg" alt="First dragon ball image" style="width:700px;height:500px;"><br>
 	<img src="src/images/dbz2.jpg" alt="Second dragon ball image" style="width:700px;height:500px;"><br>
 	<img src="src/images/dbz3.jpg" alt="Third dragon ball image"style="width:700px;height:500px;"><br>
-	<img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg"style="width:700px;height:500px;">
+	<!-- <img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg"style="width:700px;height:500px;"> -->
 	<br>
-	<a href="https://www.realmadrid.com">
-  	<img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg" alt="Isco home" style="width:620px;height:420px;border:0;">
-	</a>
+
+	<img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg"
+	srcset="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg 1x,http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg 2x"
+	sizes="100 100,200 200">
+
+	<picture>
+	  <source media="(min-width: 650px)" srcset="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg" sizes="700x500">
+	  <source media="(min-width: 465px)" srcset="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg" sizes="100x20">
+	  <img src="http://images.performgroup.com/di/library/GOAL/8/d9/isco-real-madrid-2017_1cry31o6wyigl1ox9jf5gqyxsv.jpg" alt="Isco home"style="width:620px;height:420px;border:0;">
+	</picture>
 	<br>
 	<p><img src="/Users/ederpadilla/Downloads/android_apple.gif" alt="Android yeah" style="float:right;width:82px;height:82px;">
 	The Android will float to the right of the text.</p>
@@ -220,5 +227,9 @@
 	</p>
 	
 	<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+	<iframe src="stylefromurl.html" style="height:300px;width:500px;border:20px solid red;"></iframe> <br>
+	<iframe src="links.html" name="iframe_a"></iframe>
+
+<p><a href="stylefromurl.html" target="iframe_a">links</a></p>
 </body>
 </html>
