@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script>document.createElement("myHeroEderPadilla")</script>
+		<style>
+		myHeroEderPadilla {
+		    display: block;
+		    background-color: #4286f4;
+		    padding: 20px;
+		    font-size: 35px;
+		    color: #ffffff;
+		} 
+		</style> 
+	</head>
+	<body>
+		
+		<h1>A Heading</h1>
+		<myHeroEderPadilla>My HeroEder Element</myHeroEderPadilla>
+		<section>
+		  <h1>WWF</h1>
+		  <p>The World Wide Fund for Nature (WWF) is....</p>
+		</section>
+		<article>
+	  <h1>What Does WWF Do?</h1>
+	  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.
+	  </p>
+	</article>
+	<article>
+ 	 <header>
+ 	   <h1>What Does WWF Do?</h1>
+ 	   <p>WWF's mission:</p>
+ 	 </header>
+ 	 <p>WWF's mission is to stop the degradation of our planet's natural environment,
+ 	 and build a future in which humans live in harmony with nature.</p>
+	</article>
+	<footer>
+	  <p>Posted by: Hege Refsnes</p>
+	  <p>Contact information: <a href="mailto:someone@example.com">
+	  someone@example.com</a>.</p>
+	</footer>
+	<nav>
+	  <a href="https://www.facebook.com">Facebook</a> |
+	  <a href="https://twitter.com">Twitter</a> |
+	  <a href="https://www.instagram.com">Instagram</a> |
+	  <a href="https://www.youtube.com">Youtube</a>
+	</nav>
+	<p>My family and I visited The Epcot center this summer.</p>
+
+	<aside>
+	  <h4>Epcot Center</h4>
+	  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+	</aside>
+
+	<p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau, in Forsand, Ryfylke, Norway. The top of the 	cliff is approximately 25 by 25 metres (82 by 82 feet) square and almost flat, and is a famous tourist attraction in Norway.</p>
+
+	<figure>
+	  <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2018/05/dragon-ball-legends.jpg?itok=BssSJHEF" alt="The Pulpit Rock" width="304" height="228">
+	  <figcaption>Fig.1 - The Pulpit Rock, Norway.</figcaption>
+	</figure>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+	Your browser does not support the HTML5 canvas tag.
+	</canvas>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #5b6f8e;">
+	</canvas><br><br>
+	<canvas id="myCircle" width="200" height="100" style="border:1px solid #5b6f8e;">
+	Your browser does not support the HTML5 canvas tag.</canvas><br><br>
+	<canvas id="myTextCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	<canvas id="secondText" width="200" height="100" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	<canvas id="myGradientCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	<canvas id="circularGradient" width="200" height="100" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	<p>Image to use:</p>
+	<img id="scream" src="https://www.w3schools.com/html/img_the_scream.jpg" alt="The Scream" width="220" height="277">
+
+	<p>Canvas to fill:</p>
+	<canvas id="MyImage" width="250" height="300"
+	style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<p><button onclick="myImageCanvas()">Try it</button></p>
+	<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.moveTo(0,0);
+	ctx.lineTo(200,100);
+	ctx.stroke();
+	</script>
+	<script>
+	var c = document.getElementById("myCircle");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+	</script> 
+	<script>
+	var c = document.getElementById("myTextCanvas");
+	var ctx = c.getContext("2d");
+	ctx.font = "30px Arial";
+	c.style.backgroundColor = "#125bcc";
+	console.log("ctx.background-color "+ctx.backgroundColor);
+	ctx.fillText("Hello World 😬",10,50);
+	</script>
+	<script>
+	var c = document.getElementById("secondText");
+	var ctx = c.getContext("2d");
+	ctx.font = "30px Arial";
+	ctx.strokeText("Hello World",10,50);
+	</script>
+	<script>
+	var c = document.getElementById("myGradientCanvas");
+	var ctx = c.getContext("2d");
+	// Create gradient
+	var grd = ctx.createLinearGradient(0,0,200,0);
+	grd.addColorStop(0,"red");
+	grd.addColorStop(1,"white");
+	// Fill with gradient
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,150,80);
+	</script>
+	<script>
+	var c = document.getElementById("circularGradient");
+	var ctx = c.getContext("2d");
+
+	// Create gradient
+	var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+	grd.addColorStop(0,"red");
+	grd.addColorStop(1,"white");
+
+	// Fill with gradient
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,150,80);
+	</script>
+	<script>
+	function myImageCanvas() {
+	    var c = document.getElementById("MyImage");
+	    var ctx = c.getContext("2d");
+	    var img = document.getElementById("scream");
+	    ctx.drawImage(img,10,10);
+	}
+	</script>
+	</body>
+</html>
